@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		B60F3ADA1EF2E8B60033AAAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F3AD91EF2E8B60033AAAE /* AppDelegate.swift */; };
-		B60F3ADC1EF2E8B60033AAAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F3ADB1EF2E8B60033AAAE /* ViewController.swift */; };
 		B60F3ADF1EF2E8B60033AAAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60F3ADD1EF2E8B60033AAAE /* Main.storyboard */; };
 		B60F3AE11EF2E8B60033AAAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60F3AE01EF2E8B60033AAAE /* Assets.xcassets */; };
 		B60F3AE41EF2E8B60033AAAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60F3AE21EF2E8B60033AAAE /* LaunchScreen.storyboard */; };
+		B60F3AEC1EF2EC990033AAAE /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F3AEB1EF2EC980033AAAE /* SurveyViewController.swift */; };
+		B60F3AEE1EF2EE520033AAAE /* ResponsesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F3AED1EF2EE520033AAAE /* ResponsesTableViewController.swift */; };
+		B60F3AF31EF2EF330033AAAE /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F3AF21EF2EF330033AAAE /* Survey.swift */; };
+		B60F3AF51EF2F2100033AAAE /* Survey Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F3AF41EF2F2100033AAAE /* Survey Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B60F3AD61EF2E8B60033AAAE /* Survey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Survey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60F3AD91EF2E8B60033AAAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B60F3ADB1EF2E8B60033AAAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B60F3ADE1EF2E8B60033AAAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B60F3AE01EF2E8B60033AAAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B60F3AE31EF2E8B60033AAAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B60F3AE51EF2E8B60033AAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B60F3AEB1EF2EC980033AAAE /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		B60F3AED1EF2EE520033AAAE /* ResponsesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsesTableViewController.swift; sourceTree = "<group>"; };
+		B60F3AF21EF2EF330033AAAE /* Survey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
+		B60F3AF41EF2F2100033AAAE /* Survey Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Survey Controller.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		B60F3AD81EF2E8B60033AAAE /* Survey */ = {
 			isa = PBXGroup;
 			children = (
-				B60F3AD91EF2E8B60033AAAE /* AppDelegate.swift */,
-				B60F3ADB1EF2E8B60033AAAE /* ViewController.swift */,
+				B60F3AF61EF2F2130033AAAE /* Model Controller */,
+				B60F3AF11EF2EF1B0033AAAE /* Model */,
+				B60F3AF01EF2EEE10033AAAE /* View Controllers */,
+				B60F3AEF1EF2EED00033AAAE /* Resources */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
+		B60F3AEF1EF2EED00033AAAE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				B60F3ADD1EF2E8B60033AAAE /* Main.storyboard */,
+				B60F3AD91EF2E8B60033AAAE /* AppDelegate.swift */,
 				B60F3AE01EF2E8B60033AAAE /* Assets.xcassets */,
 				B60F3AE21EF2E8B60033AAAE /* LaunchScreen.storyboard */,
 				B60F3AE51EF2E8B60033AAAE /* Info.plist */,
 			);
-			path = Survey;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B60F3AF01EF2EEE10033AAAE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B60F3AED1EF2EE520033AAAE /* ResponsesTableViewController.swift */,
+				B60F3AEB1EF2EC980033AAAE /* SurveyViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B60F3AF11EF2EF1B0033AAAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B60F3AF21EF2EF330033AAAE /* Survey.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B60F3AF61EF2F2130033AAAE /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B60F3AF41EF2F2100033AAAE /* Survey Controller.swift */,
+			);
+			name = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60F3ADC1EF2E8B60033AAAE /* ViewController.swift in Sources */,
+				B60F3AEC1EF2EC990033AAAE /* SurveyViewController.swift in Sources */,
+				B60F3AF31EF2EF330033AAAE /* Survey.swift in Sources */,
+				B60F3AF51EF2F2100033AAAE /* Survey Controller.swift in Sources */,
 				B60F3ADA1EF2E8B60033AAAE /* AppDelegate.swift in Sources */,
+				B60F3AEE1EF2EE520033AAAE /* ResponsesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
